@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  app:
+    build: ./
+    container_name: app
+    ports:
+      - "8082:8082"
+    environment:
+      BLOCK: 60
+      LIMIT: 100
